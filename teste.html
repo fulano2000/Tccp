@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegação Retrátil</title>
+    <link rel="stylesheet" href="teste.css">
+</head>
+<body>
+
+<header>
+    <h1>Mind Chat</h1>
+    <button class="toggle-button" id="toggleButton">Menu</button>
+</header>
+
+<nav id="navbar" class="navbar">
+    <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#recomendacoes">Recomendações</a></li>
+        <li><a href="#jogos">Jogos</a></li>
+        <li><a href="#historico">Histórico</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h2 id="sobre">Sobre o Mind Chat</h2>
+    <p>O Mind Chat é uma plataforma dedicada a promover a saúde mental...</p>
+    
+    <h2 id="recomendacoes">Recomendações</h2>
+    <p>Aqui estão algumas recomendações de saúde mental...</p>
+    
+    <h2 id="jogos">Jogos para Saúde Mental</h2>
+    <p>Explore jogos que ajudam a promover o bem-estar...</p>
+    
+    <h2 id="historico">Registro de Histórico</h2>
+    <p>Adicione seus registros de atividades e sentimentos...</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Mind Chat. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    const toggleButton = document.getElementById('toggleButton');
+    const navbar = document.getElementById('navbar');
+
+    toggleButton.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>

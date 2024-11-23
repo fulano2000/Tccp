@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Chat</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mind Chat</h1>
+    <button class="toggle-button" id="toggleButton">Menu</button>
+</header>
+<nav id="navbar" class="navbar">
+
+    <a href="cria_conta.html">Criar Conta</a>
+    <a href="login.html">Fazer Login</a>
+    <a href="avaliar.html">Avaliação de Saúde Mental</a>
+    <a href="mental-info.html">Informações Mentais</a>
+    <a href="relaxation.html">Técnicas de Relaxamento</a>
+    <a href="professionals.html">Profissionais de Saúde</a>
+    <a href="personalized-games.html">Jogos Personalizados</a>
+    <a href="history-record.html">Diária</a>
+    <a href="recommendations.html">Recomendações</a>
+
+</nav>
+
+<div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <input type="text" placeholder="Usuário" required>
+        <input type="password" placeholder="Senha" required>
+        <button type="submit">Entrar</button>
+    </form>
+</div>
+
+    
+
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Login realizado com sucesso!');
+    });
+</script>
+    
+
+    <footer>
+         <p>&copy; 2024 Mind Chat. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const navbar = document.getElementById('navbar');
+    
+        toggleButton.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
